@@ -80,14 +80,14 @@ a{
     }
     #flex_container{
         margin: auto;
-        /* width: 300px; */
+        width: 300px;
+        height: 245vh;
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
-        /* justify-content: space-evenly; */
-        /* align-items: center; */
+        align-items: center;
         flex-wrap: wrap;
         gap: 20px;
+
     }
     .flex_item{
         width: 300px;
@@ -154,6 +154,33 @@ a{
     color: aliceblue;
 }
 
+/* -------------------media query------------------- */
+
+@media only screen and (max-width: 667px) and (min-width: 200px) {
+    #flex_containeri2{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+    .flex_itemi2{
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    background-color: #f17474;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 2vh;
+    }
+
+
+}
+
+
+
 
 
 /* -------------------index3 css------------------- */
@@ -191,6 +218,32 @@ a{
 .anchorposition_ci3{
     height: 55px;
     padding-top: 30px;
+}
+
+
+
+/* -------------------media query------------------- */
+
+@media only screen and (max-width: 667px) and (min-width: 200px) {
+    #flex_container_i3{
+    width: 355px;
+}
+.flex_item_i3{
+    width: 300px;
+    height: 260px;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    background-color: #fff;
+}
+#anchorposition_pi3 {
+    margin: auto;
+    width: 355px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+
 }
 
 
@@ -247,4 +300,36 @@ a{
 }
 #additem_i4{
     text-align: center;
+}
+
+
+/* -------------------media query------------------- */
+
+
+
+@media only screen and (max-width: 667px) and (min-width: 200px) {
+    #flex_container_i4{
+        width: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: absolute;
+    background-color: rgb(187, 243, 243);
+    left: 0px;
+    align-items: center;
+    top: 43vh;
+
+    }
+    .flex_item_i4{
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    background-color: #f17474;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 2vh;
+    }
+
+
 }
